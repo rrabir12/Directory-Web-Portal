@@ -89,10 +89,19 @@ transform: scale(1);
       align-items: flex-start;
       text-align: left;
   }
- 
-
 }
-
+.navbar .container .text-end button{
+  /* background-color: rgb(24, 117, 141); */
+  color: white;
+  background: linear-gradient(to left, #ff414d 50%, rgb(205, 209, 211) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-in-out;
+}
+.navbar .container .text-end button:hover{
+  /* background-color: rgb(128, 40, 16); */
+  color: #000;
+  background-position: left;
+}
 
 /* hero section */
 .hero {
@@ -172,68 +181,352 @@ transform: scale(1);
 }
 
 /* category */
-.category{
-  height: 550px;
-  width: 100%;
-}
 .category {
-  margin-top: -80px; 
+  margin-top: -80px;
   position: relative;
-  z-index: 2; 
+  z-index: 2;
+  padding-bottom: 40px;
 }
 
-/* fade in animation */
-
-.card {
-  margin: 20px 20px;
+ .card {
+  margin: 20px 10px;
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease, transform 0.9s ease;
-  /* transition: 0.5s ease; */
 }
 
-.card.visible {
+ .card.visible {
   opacity: 1;
   transform: translateY(0);
 }
-.card h6{
+
+.category .card h6 {
   font-size: 18px;
   font-weight: 540;
 }
 
-.card:hover{
+.category .card:hover {
   background-color: #ff414d;
   color: white;
-  .icon{
-    color: #fff;
-  }
-  .card-text{
-    color: white;
-  }
 }
-.card .icon{
+
+.category .card .icon {
   color: #ff414d;
 }
-.card:hover .card-text span::before{
-background-color: white;
-}
-.card-text span::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90%;
-  background-color: rgba(0, 0, 0, 0.1); /* Rectangle color and transparency */
-  z-index: -1; /* Ensure it is behind the text */
-  border-radius: 3px; /* Optional: for rounded corners */
-  padding: 2px; /* Optional: space around the text */
+
+.category .card:hover .icon {
+  color: #fff;
 }
 
-
-.card-text span{
+.category .card-text span {
   position: relative;
   display: inline-block;
   color: #ff414d;
-  margin-right: 8px;
+}
+
+.category .card:hover .card-text span {
+  color: white;
+}
+
+
+/* call to action */
+.callSection{
+  background-image: url('../images/lauris-rozentals-RyKLUffUhVM-unsplash.jpg');
+  background-attachment: fixed;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.callSection h1,#service h4{
+color: white;
+}
+.callSection span{
+  color: rgb(30, 29, 29);
+}
+.callSection button{
+  /* background-color: rgb(24, 117, 141); */
+  color: white;
+  background: linear-gradient(to left, #ff414d 50%, rgb(205, 209, 211) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-in-out;
+}
+.callSection button:hover{
+  /* background-color: rgb(128, 40, 16); */
+  color: #000;
+  background-position: left;
+}
+
+/* popular listing */
+.popularListing .card {
+  position: relative;
+}
+
+.popularListing .card img {
+  /* margin-top: 10px; */
+  height: 40vh;
+  width: 100%;
+}
+
+.popularListing .card-body {
+  padding-top: 40px;
+}
+
+.popularListing .underline {
+  border-bottom: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+.eclipse {
+  position: absolute;
+  top: 51.9%;
+  left: 51%;
+  width: 45px;
+  height: 45px;
+  background-color: #ff414d;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.popularListing .logo {
+  position: absolute;
+  color: #fff;
+  top: 227px;
+  left: 51%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.popularListing .card-body h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff414d;
+}
+
+.popularListing .card-body h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.popularListing .card-body p {
+  font-size: 15px;
+  color: rgb(168, 162, 162);
+}
+
+.popularListing .card-body p i {
+  color: #ff414d;
+  font-size: 12px;
+}
+
+.popularListing .card-body p span {
+  color: rgb(216, 156, 27);
+}
+
+/* welcome section */
+.welcome {
+  background-color: #F0F4F7;
+  padding: 2rem 0;
+}
+
+.welcome img {
+  object-fit: cover;
+  max-height: 75vh;
+}
+
+.welcome .text h5 {
+  font-size: 1.2rem;
+}
+
+.welcome .text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.welcome .button {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.welcome button {
+  height: 114px;
+  width: 139px;
+  background-color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome .button span {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.welcome .button p {
+  color: #ff414d;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .welcome .text {
+    text-align: center;
+  }
+  .welcome .button {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome img {
+    max-height: 50vh;
+  }
+  .welcome h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* testimonial */
+.testimonial-card {
+  background-color: #F0F4F7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.testimonial-card .text p{
+  color: #ff414d;
+  font-size: 15px;
+}
+.testimonial-icon {
+  font-size: 25px;
+  color: #fff;
+  background-color: #ff414d;
+  width: 3vw;
+  border-radius: 50%;
+  margin-top: -40px;
+  margin-left: 140px;
+}
+.testimonial-text {
+  margin: 20px 0;
+}
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.testimonial-img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+.testimonial-name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 2px;
+}
+
+/* blog */
+.blog img {
+  width: 100%;
+  height: 40vh;
+}
+
+.blog .card-body p {
+  font-size: 14px;
+  color: #767373;
+}
+
+.blog .card-body h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: -12px;
+}
+
+ .card-body span {
+  color: #ff414d;
+}
+
+.blog .comment-section {
+  position: absolute;
+  bottom: 195px;
+  width: 92%;
+  left: 4%;
+  right: 4%;
+  border-radius: 7px;
+  padding: 1px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.blog .comment-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  /* margin-right: 10px; */
+  margin: 3px;
+}
+
+.blog .comment-name {
+  font-weight:600;
+  font-size: 14px;
+}
+
+.blog .comment-heart {
+  color: #ff414d;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+/* footer */
+footer {
+  background-color: #10151C;
+}
+footer h2{
+  font-size: 24px;
+  color: #fff;
+  margin-top: 30px;
+}
+footer p{
+  font-size: 14px;
+  color: #9a9898;
+}
+footer .icon{
+  font-size: 15px;
+  color: #9a9898;
+}
+ .copyright{
+  background-color: #0C1016;
+  height: 75px;
+  width: 100%;
+}
+.copyright p{
+padding-top: 30px;
+color: #9a9898;
+}
+footer h4{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+footer li{
+  list-style: none;
+}
+footer li a{
+  font-size: 12px;
+  color: rgb(165, 165, 165);
+  text-decoration: none;
+}
+footer li a:hover{
+  color: rgb(192, 191, 191);
+}
+footer i{
+  color: #ff414d;
 }
