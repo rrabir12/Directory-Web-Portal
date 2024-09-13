@@ -290,6 +290,14 @@ color: white;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+@media only screen and (max-width:990px){
+  .eclipse{
+    top: 56%;
+  }
+  .popularListing .logo{
+    top: 276px !important;
+  }
+ }
 
 .popularListing .logo {
   position: absolute;
@@ -412,6 +420,11 @@ color: white;
   margin-top: -40px;
   margin-left: 140px;
 }
+@media only screen and (max-width:990px){
+  .testimonial-icon{
+    width: 16%;
+  }
+ }
 .testimonial-text {
   margin: 20px 0;
 }
