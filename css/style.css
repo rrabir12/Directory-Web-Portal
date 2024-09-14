@@ -585,12 +585,12 @@ footer li i{
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 95%;
   width: 100%;
-  background-image: url('../images/neom-fYTVHcpak2g-unsplash.jpg');
+  background-image: url('../images/levi-t-JL43tW6dabA-unsplash.jpg');
   background-attachment: fixed;
   background-size: cover;
-  background-position: top 8% right 0;
+  background-position: top 60% right 0;
   filter: brightness(0.7) contrast(1);
   z-index: -1;
 }
