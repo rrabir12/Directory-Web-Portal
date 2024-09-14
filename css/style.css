@@ -9,6 +9,9 @@
     display: none;
    }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 h1{
   font-size: 50px;
@@ -180,7 +183,7 @@ transform: scale(1);
 
 .search-button {
   height: 100%;
-  width: 140%;
+  width: 100%;
   margin-left: -120px;
   border-radius: 0; 
   background-color: #000;
@@ -194,13 +197,12 @@ transform: scale(1);
   padding-bottom: 40px;
 }
 
- .card {
+.card {
   margin: 20px 10px;
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.9s ease;
+  transition: opacity 0.4s ease, transform 0.5s ease; /* Reduced timing */
 }
-
  .card.visible {
   opacity: 1;
   transform: translateY(0);
@@ -360,23 +362,29 @@ color: white;
   font-weight: bold;
 }
 
-.welcome .button {
+/* .welcome .button {
   display: flex;
   gap: 10px;
   justify-content: flex-start;
-}
-
+  color: white;
+  background: linear-gradient(to left, #ff414d 50%, rgb(205, 209, 211) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-in-out;
+} */
 .welcome button {
   height: 114px;
   width: 139px;
-  background-color: #e5eeee;
+  background: linear-gradient(to left, #b0c2d0 50%, rgb(205, 209, 211) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .welcome button:hover{
-  background-color: #efa4a9;
+  /* color: #000; */
+  background-position: left;
 }
 .welcome .button span {
   color: #000;
@@ -517,7 +525,7 @@ footer h2{
   margin-top: 30px;
 }
 footer p{
-  font-size: 14px;
+  font-size: 15px;
   color: #9a9898;
 }
 footer .icon{
@@ -542,7 +550,7 @@ footer li{
   list-style: none;
 }
 footer li a{
-  font-size: 12px;
+  font-size: 14px;
   color: rgb(165, 165, 165);
   text-decoration: none;
   margin-left: -25px;
@@ -552,6 +560,11 @@ footer li a:hover{
 }
 footer i{
   color: #ff414d;
+}
+footer li i{
+  color: rgb(165, 165, 165);
+  /* margin-left: -40px; */
+  justify-content: space-between;
 }
 
 /* About Section css */
@@ -587,4 +600,35 @@ footer i{
 }
 .about-hero h6{
   color: #d2d0d0;
+}
+
+/* work */
+.work .testimonial-card {
+  background-color: #F0F4F7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.work .testimonial-card .text p{
+  color: #ff414d;
+  font-size: 15px;
+}
+.work .testimonial-icon {
+  font-size: 25px;
+  color: #fff;
+  background-color: #ff414d;
+  width: 3vw;
+  border-radius: 50%;
+  margin-top: -0px !important;
+  margin-left: 140px;
+}
+@media only screen and (max-width:990px){
+  .work .testimonial-icon{
+    width: 16%;
+  }
+ }
+.work .testimonial-text {
+  margin: 20px 0;
 }
