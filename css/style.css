@@ -93,16 +93,19 @@ transform: scale(1);
       text-align: left;
   }
 }
-.navbar .container .text-end button{
-  /* background-color: rgb(24, 117, 141); */
+.navbar .container .text-end button a{
+  text-decoration: none;
   color: white;
+}
+.navbar .container .text-end button:hover a {
+  color: #000 !important;  
+}
+.navbar .container .text-end button{
   background: linear-gradient(to left, #ff414d 50%, rgb(205, 209, 211) 50%) right;
-    background-size: 200%;
-    transition: .5s ease-in-out;
+  background-size: 200%;
+  transition: .5s ease-in-out;
 }
 .navbar .container .text-end button:hover{
-  /* background-color: rgb(128, 40, 16); */
-  color: #000;
   background-position: left;
 }
 
