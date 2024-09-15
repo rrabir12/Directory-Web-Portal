@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
 // for welcome button
   document.addEventListener("DOMContentLoaded", function () {
     const counters = document.querySelectorAll(".welcome .button span");

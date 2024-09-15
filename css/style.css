@@ -142,52 +142,42 @@ transform: scale(1);
 .hero h6{
   color: #d2d0d0;
 }
-.hero .row .one{
-  margin-left: 5px;
+/* Reset the padding and margin to make the inputs and button attached */
+.row .col-md-3,
+.row .col-md-2,
+.row .col-md-1 {
+  padding: 0;
+  margin: 0;
 }
-.hero .row .two{
-  margin-left: -30px;
-}
-.hero .row .three{
-  margin-left: 33px;
-}
-/* .search-input {
-  border-right: 1px solid black; 
-  border-radius: 0; 
-  margin-left: 40px;
-} */
-@media only screen and (max-width:990px){
- .hero .row .one{
-  margin-left: -0px;
- }
- .hero .row .two{
-  margin-left: -0px;
- }
- .hero .row .three{
-  margin-left: -0px;
- }
- .hero .row .search-button{
-  margin-left: -0px;
- }
 
+.search-input {
+  border-right: 1px solid black !important; 
+  border-radius: 0;
+  padding: 12px !important;
 }
-.search-field input::placeholder{
-  color: red;
-}
+
 .search-input:last-child {
   border-right: none;
-}
-.search-input{
-  padding: 12px !important;
 }
 
 .search-button {
   height: 100%;
   width: 100%;
-  margin-left: -120px;
-  border-radius: 0; 
-  background-color: #000;
+  background-color: #ff414d !important;
+  color: #fff;
+  border-radius: 0;
+  padding: 12px;
+  margin: 0;
 }
+
+/* Mobile adjustments */
+/* @media only screen and (max-width: 990px) {
+  .search-input,
+  .search-button {
+    margin-bottom: 10px;
+  }
+} */
+
 
 /* category */
 .category {
@@ -198,18 +188,21 @@ transform: scale(1);
 }
 
 .card {
-  margin: 20px 10px;
-  opacity: 0;
+  margin: 10px;
+  padding: 10px;
+  /* opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.4s ease, transform 0.5s ease; /* Reduced timing */
+  transition: opacity 0.4s ease, transform 0.5s ease; */
 }
- .card.visible {
+/* .card.visible {
   opacity: 1;
   transform: translateY(0);
-}
+} */
 
-.category .card h6 {
-  font-size: 18px;
+.category .card h6 a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
   font-weight: 540;
 }
 
@@ -227,8 +220,6 @@ transform: scale(1);
 }
 
 .category .card-text span {
-  position: relative;
-  display: inline-block;
   color: #ff414d;
 }
 
@@ -253,6 +244,7 @@ color: white;
 }
 .callSection span{
   color: rgb(30, 29, 29);
+  font-weight: 500;
 }
 .callSection button{
   /* background-color: rgb(24, 117, 141); */
@@ -277,6 +269,16 @@ color: white;
   height: 40vh;
   width: 100%;
 }
+/* .hidden-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.visible-card {
+  opacity: 1;
+  transform: translateY(0);
+} */
 
 .popularListing .card-body {
   padding-top: 40px;
@@ -289,7 +291,7 @@ color: white;
 
 .eclipse {
   position: absolute;
-  top: 51.9%;
+  top: 50%;
   left: 51%;
   width: 45px;
   height: 45px;
@@ -303,7 +305,7 @@ color: white;
     top: 56%;
   }
   .popularListing .logo{
-    top: 276px !important;
+    top: 287px !important;
   }
  }
 
@@ -361,16 +363,9 @@ color: white;
   font-size: 2rem;
   font-weight: bold;
 }
-
-/* .welcome .button {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-start;
-  color: white;
-  background: linear-gradient(to left, #ff414d 50%, rgb(205, 209, 211) 50%) right;
-    background-size: 200%;
-    transition: .5s ease-in-out;
-} */
+.welcome .text p{
+color: #999;
+}
 .welcome button {
   height: 114px;
   width: 139px;
@@ -388,8 +383,8 @@ color: white;
 }
 .welcome .button span {
   color: #000;
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 
 .welcome .button p {
@@ -420,7 +415,7 @@ color: white;
   background-color: #F0F4F7;
   border-radius: 10px;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 15px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -434,12 +429,12 @@ color: white;
   background-color: #ff414d;
   width: 3vw;
   border-radius: 50%;
-  margin-top: -40px;
+  margin-top: -36px;
   margin-left: 140px;
 }
 @media only screen and (max-width:990px){
   .testimonial-icon{
-    width: 16%;
+    width: 14%;
   }
  }
 .testimonial-text {
@@ -475,8 +470,8 @@ color: white;
 }
 
 .blog .card-body h2 {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   margin-top: -12px;
 }
 
@@ -486,10 +481,10 @@ color: white;
 
 .blog .comment-section {
   position: absolute;
-  bottom: 175px;
-  width: 92%;
-  left: 4%;
-  right: 4%;
+  bottom: 196px;
+  width: 88%;
+  left: 6%;
+  right: 6%;
   border-radius: 7px;
   padding: 1px;
   background: rgba(255, 255, 255, 0.8);
@@ -607,28 +602,50 @@ footer li i{
   background-color: #F0F4F7;
   border-radius: 10px;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 5px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.work .testimonial-card .text p{
-  color: #ff414d;
-  font-size: 15px;
+.work .testimonial-card h4{
+  font-size: 24px;
+}
+.work .testimonial-card .testimonial-text{
+color: #999;
 }
 .work .testimonial-icon {
+  position: relative;
+  z-index: 2;
   font-size: 25px;
-  color: #fff;
-  background-color: #ff414d;
-  width: 3vw;
+  color: #ffffff;
+  background-color: unset !important;
+  width: 4vw;
+  height: 8vh;
   border-radius: 50%;
-  margin-top: -0px !important;
-  margin-left: 140px;
+  margin-top: 0px !important;
+  margin-left: 90px;
+}
+.work .testimonial-icon::before{
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 8vh;
+  width: 4vw;
+  margin-top: -5px;
+  background-color: #ff414d;
+  position: absolute;
+  border-radius: 50%;
 }
 @media only screen and (max-width:990px){
   .work .testimonial-icon{
     width: 16%;
   }
  }
-.work .testimonial-text {
-  margin: 20px 0;
+
+ /* for pagination */
+ .pagination li a{
+  color: black;
+}
+.pagination li a:hover{
+  color:red;
 }
