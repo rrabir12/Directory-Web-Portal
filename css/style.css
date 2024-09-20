@@ -267,6 +267,10 @@ width: 12rem;
   font-size: 12px;
   color: rgb(255, 174, 0);
 }
+.popularListing .container .row .card .card-body h5 a{
+color: #000;
+text-decoration: none;
+}
 @media (max-width: 990px) {
   /* .popularListing{
     margin-top: 6rem !important;
