@@ -1,375 +1,718 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DirectoryHub | About</title>
-   <!-- external css -->
-   <link rel="stylesheet" href="css/style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DirectoryHub | Listing</title>
 
-   <!-- bootstrap css link -->
-   <link
-     rel="stylesheet"
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-   />
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
 
-   <!-- font awesome link-->
-   <script
-     src="https://kit.fontawesome.com/a6b4e92e5b.js"
-     crossorigin="anonymous"
-   ></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-   <!-- iconify -->
-   <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
- 
-</head>
-<body>
-  
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"
-        ><i class="fa-solid fa-database me-1"></i>DirectoryHub</a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="listing.html">Listing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+    <!-- font awesome icon link -->
+    <script
+      src="https://kit.fontawesome.com/a6b4e92e5b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style></style>
+  </head>
+  <body style="background-color: #f0f4f7">
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand mt-1" href="#"
+          ><h4>
+            <i class="fa-solid fa-database me-2"></i>Directory
+            <span style="color: #ff414d">Hub</span>
+          </h4></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="background-color: #ff414d"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav" id="navbarColor02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-3" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="listing.html">Listing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="button">
+            <button class="btn">
+              <a href="addListing.html"><i class="fa-solid fa-plus me-2"></i>Add Listing</a>
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="text-end">
-        <button type="button" class="btn">
-          <a href="addListing.html"><i class="fa-solid fa-plus me-1"></i>Add Listing</a>
+    </nav>
+
+    <!-- hero section -->
+    <section class="about-hero">
+      <div class="container">
+        <p>Home > Listing</p>
+        <h1>Our Listing</h1>
+      </div>
+    </section>
+
+    <section class="search-section mt-5 py-5">
+    <h1 class="text-center">Let's Explore your Awesome </h1>
+    <h1 class="text-center mt-3">City</h1>
+    <div class="search row justify-content-center mt-4">
+      
+      <div class="col-md-3">
+        <input
+          class="form-control py-3 one"
+          placeholder="&#xf002;  What are you looking for"
+          style="
+            border-radius: unset;
+            border-start-start-radius: 6px;
+            border-bottom-left-radius: 6px;
+            font-family: 'poppins', FontAwesome, sans-serif;
+          "
+        />
+      </div>
+      <div class="col-md-2">
+        <input
+          class="form-control py-3 two"
+          placeholder=" &#xf3c5;  Location"
+          style="
+            border-radius: unset;
+            font-family: 'poppins', FontAwesome, sans-serif;
+          "
+        />
+      </div>
+      <div class="col-md-2">
+        <input
+          class="form-control py-3 three"
+          list="datalistOptions"
+          id="exampleDataList"
+          placeholder=" &#xf107;  All Category"
+          style="
+            border-radius: unset;
+            font-family: 'poppins', FontAwesome, sans-serif;
+          "
+        />
+        <datalist id="datalistOptions">
+          <option>Food & Drinks</option>
+          <option>Hotels</option>
+          <option>Education</option>
+          <option>Beauty & Salon</option>
+          <option>Fitness & Gym</option>
+          <option value="">Bar & Club</option>
+          <option value="">Shopping</option>
+          <option value="">Health & Care</option>
+        </datalist>
+      </div>
+      <div class="col-md-2">
+        <button
+          class="btn py-3"
+          style="background-color: #ff414d; color: #fff; width: 100%"
+        >
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="font-size: 12px"
+          ></i>
+          Search
         </button>
       </div>
     </div>
-  </nav>
-
-  <section class="about-hero ">
-    <div class="container">
-      <h6>
-        Home > Listing >
-      </h6>
-      <h1>Our Listings</h1>
-    </div>
   </section>
 
-  <section class="search">
-    <h1 class="text-center">Let's Explore Your Awesome </h1>
-    <h1 class="text-center">City</h1>
+    <!-- listing section -->
+    <section class="listing popularListing py-5">
+      <div class="container">
+        <h2 class="text-center">Our Popular Listing</h2>
+        <div class="row">
+          <div
+            class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
+            style="width: 17rem"
+          >
+            <img
+              src="./images/toa-heftiba-B1KuLO3NoRg-unsplash.jpg"
+              class="card-img-top"
+              alt=""
+              style="width: 100%; margin-top: 10px"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-burger"></i>
+            </div>
+            <div class="card-body text-center">
+              <p>Food & Drinks</p>
+              <h5 class="card-title">Indian Restraunt</h5>
+              <p style="color: #686666">
+                <i
+                  class="fa-solid fa-location-dot me-2"
+                  style="color: #ff414d"
+                ></i
+                >Traffic Chowk-3, Birat
+              </p>
+              <p style="color: #686666">
+                <i class="fa-solid fa-phone me-2" style="color: #ff414d"></i
+                >+977-9812345676
+              </p>
+              <hr />
+              <div class="review">
+                <p style="color: #686666">
+                  Review: <span style="color: #000">5.0/5</span
+                  ><i class="fa-solid fa-star ms-4"></i> (100)
+                </p>
+              </div>
+            </div>
+          </div>
 
-<!-- Search Box -->
-<div class="row justify-content-center mt-5">
-  <div class="col-md-3 p-0">
-    <input
-      type="text"
-      class="form-control search-input three"
-      placeholder="What are you looking for?"
-    />
-  </div>
-  <div class="col-md-2 p-0">
-    <input
-      type="text"
-      class="form-control search-input one"
-      placeholder="Location"
-    />
-  </div>
-  <div class="col-md-2 p-0">
-    <select class="form-control search-input two">
-      <option>All Categories</option>
-      <option>Food & Drinks</option>
-      <option>Hotels</option>
-      <option>Education</option>
-      <option>Beauty & Salon</option>
-      <option>Fitness & Gym</option>
-      <option>Bar & Club</option>
-      <option>Shopping</option>
-      <option>Health & Care</option>
-    </select>
-  </div>
-  <div class="col-md-1 p-0">
-    <button class="btn search-button">
-      Search
-    </button>
-  </div>
-</div>
+          <div
+            class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
+            style="width: 17rem"
+          >
+            <img
+              src="./images/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg"
+              class="card-img-top"
+              alt=""
+              style="width: 100%; margin-top: 10px"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-hotel"></i>
+            </div>
+            <div class="card-body text-center">
+              <p>Hotel</p>
+              <h5 class="card-title">Nepali Hotel</h5>
+              <p style="color: #686666">
+                <i
+                  class="fa-solid fa-location-dot me-2"
+                  style="color: #ff414d"
+                ></i
+                >Traffic Chowk-3, Birat
+              </p>
+              <p style="color: #686666">
+                <i class="fa-solid fa-phone me-2" style="color: #ff414d"></i
+                >+977-9812345676
+              </p>
+              <hr />
+              <div class="review">
+                <p style="color: #686666">
+                  Review: <span style="color: #000">5.0/5</span
+                  ><i class="fa-solid fa-star ms-4"></i> (100)
+                </p>
+              </div>
+            </div>
+          </div>
 
-  </section>
+          <div
+            class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
+            style="width: 17rem"
+          >
+            <img
+              src="./images/matt-ragland-02z1I7gv4ao-unsplash.jpg"
+              class="card-img-top"
+              alt=""
+              style="width: 100%; margin-top: 10px"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-burger"></i>
+            </div>
+            <div class="card-body text-center">
+              <p>Education</p>
+              <h5 class="card-title">Purbanchal College</h5>
+              <p style="color: #686666">
+                <i
+                  class="fa-solid fa-location-dot me-2"
+                  style="color: #ff414d"
+                ></i
+                >Traffic Chowk-3, Birat
+              </p>
+              <p style="color: #686666">
+                <i class="fa-solid fa-phone me-2" style="color: #ff414d"></i
+                >+977-9812345676
+              </p>
+              <hr />
+              <div class="review">
+                <p style="color: #686666">
+                  Review: <span style="color: #000">5.0/5</span
+                  ><i class="fa-solid fa-star ms-4"></i> (100)
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <section class="popularListing container mt-5">
-    <h2 class="text-center">Our Popular Listing</h2>
-    <div class="row">
-      <div class="col-lg-3 col-md-6 col-sm-12" >
-        <div class="card mx-auto" style="width: 100%; position: relative" id="card1">
-          <img
-            src="https://plus.unsplash.com/premium_photo-1672242676700-6823878b8439?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="card-img-top"
-            alt="Listing Image"
-          />
-          <div class="eclipse"></div>
-          <i class="fa-solid fa-burger fa-2x logo"></i>
-          <div class="card-body text-center">
-            <h5 class="card-title">Food & Drinks</h5>
-            <h2 class="card-text"><a href="listingDetails.html">Indian Restaurant</a></h2>
-            <p class="card-text">
-              <i class="fas fa-map-marker-alt"></i> Traffic Chowk-3, Birat
-            </p>
-            <p class="card-text"><i class="fas fa-phone"></i> 9867647546</p>
-            <div class="underline"></div>
-            <p class="card-text">Review: <span>★★★★☆</span>(120)</p>
+          <div
+            class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
+            style="width: 17rem"
+          >
+            <img
+              src="./images/list-6.jpg.webp"
+              class="card-img-top"
+              alt=""
+              style="width: 100%; margin-top: 10px"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-burger"></i>
+            </div>
+            <div class="card-body text-center">
+              <p>Bar & Club</p>
+              <h5 class="card-title">Cat Walk</h5>
+              <p style="color: #686666">
+                <i
+                  class="fa-solid fa-location-dot me-2"
+                  style="color: #ff414d"
+                ></i
+                >Traffic Chowk-3, Birat
+              </p>
+              <p style="color: #686666">
+                <i class="fa-solid fa-phone me-2" style="color: #ff414d"></i
+                >+977-9812345676
+              </p>
+              <hr />
+              <div class="review">
+                <p style="color: #686666">
+                  Review: <span style="color: #000">5.0/5</span
+                  ><i class="fa-solid fa-star ms-4"></i> (100)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
+            style="width: 17rem"
+          >
+            <img
+              src="./images/cathy-pham-3jAN9InapQI-unsplash.jpg"
+              class="card-img-top"
+              alt=""
+              style="width: 100%; margin-top: 10px"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-burger"></i>
+            </div>
+            <div class="card-body text-center">
+              <p>Fitness & Gym</p>
+              <h5 class="card-title">Body Fitgym</h5>
+              <p style="color: #686666">
+                <i
+                  class="fa-solid fa-location-dot me-2"
+                  style="color: #ff414d"
+                ></i
+                >Traffic Chowk-3, Birat
+              </p>
+              <p style="color: #686666">
+                <i class="fa-solid fa-phone me-2" style="color: #ff414d"></i
+                >+977-9812345676
+              </p>
+              <hr />
+              <div class="review">
+                <p style="color: #686666">
+                  Review: <span style="color: #000">5.0/5</span
+                  ><i class="fa-solid fa-star ms-4"></i> (100)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
+            style="width: 17rem"
+          >
+            <img
+              src="./images/freestocks-_3Q3tsJ01nc-unsplash.jpg"
+              class="card-img-top"
+              alt=""
+              style="width: 100%; margin-top: 10px"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-burger"></i>
+            </div>
+            <div class="card-body text-center">
+              <p>Shopping</p>
+              <h5 class="card-title">Bhatbhateni</h5>
+              <p style="color: #686666">
+                <i
+                  class="fa-solid fa-location-dot me-2"
+                  style="color: #ff414d"
+                ></i
+                >Traffic Chowk-3, Birat
+              </p>
+              <p style="color: #686666">
+                <i class="fa-solid fa-phone me-2" style="color: #ff414d"></i
+                >+977-9812345676
+              </p>
+              <hr />
+              <div class="review">
+                <p style="color: #686666">
+                  Review: <span style="color: #000">5.0/5</span
+                  ><i class="fa-solid fa-star ms-4"></i> (100)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
+            style="width: 17rem"
+          >
+            <img
+              src="./images/piggybank-twz_GExsfmQ-unsplash.jpg"
+              class="card-img-top"
+              alt=""
+              style="width: 100%; margin-top: 10px"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-burger"></i>
+            </div>
+            <div class="card-body text-center">
+              <p>Bank</p>
+              <h5 class="card-title">National Bank</h5>
+              <p style="color: #686666">
+                <i
+                  class="fa-solid fa-location-dot me-2"
+                  style="color: #ff414d"
+                ></i
+                >Traffic Chowk-3, Birat
+              </p>
+              <p style="color: #686666">
+                <i class="fa-solid fa-phone me-2" style="color: #ff414d"></i
+                >+977-9812345676
+              </p>
+              <hr />
+              <div class="review">
+                <p style="color: #686666">
+                  Review: <span style="color: #000">5.0/5</span
+                  ><i class="fa-solid fa-star ms-4"></i> (100)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
+            style="width: 17rem"
+          >
+            <img
+              src="./images/list-7.jpg.webp"
+              class="card-img-top"
+              alt=""
+              style="width: 100%; margin-top: 10px"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-burger"></i>
+            </div>
+            <div class="card-body text-center">
+              <p>Entertainment</p>
+              <h5 class="card-title">Nepali Circus</h5>
+              <p style="color: #686666">
+                <i
+                  class="fa-solid fa-location-dot me-2"
+                  style="color: #ff414d"
+                ></i
+                >Traffic Chowk-3, Birat
+              </p>
+              <p style="color: #686666">
+                <i class="fa-solid fa-phone me-2" style="color: #ff414d"></i
+                >+977-9812345676
+              </p>
+              <hr />
+              <div class="review">
+                <p style="color: #686666">
+                  Review: <span style="color: #000">5.0/5</span
+                  ><i class="fa-solid fa-star ms-4"></i> (100)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
+            style="width: 17rem"
+          >
+            <img
+              src="./images/list-1.jpg.webp"
+              class="card-img-top"
+              alt=""
+              style="width: 100%; margin-top: 10px"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-burger"></i>
+            </div>
+            <div class="card-body text-center">
+              <p>Food & Drinks</p>
+              <h5 class="card-title">Japnese Restaurant</h5>
+              <p style="color: #686666">
+                <i
+                  class="fa-solid fa-location-dot me-2"
+                  style="color: #ff414d"
+                ></i
+                >Traffic Chowk-3, Birat
+              </p>
+              <p style="color: #686666">
+                <i class="fa-solid fa-phone me-2" style="color: #ff414d"></i
+                >+977-9812345676
+              </p>
+              <hr />
+              <div class="review">
+                <p style="color: #686666">
+                  Review: <span style="color: #000">5.0/5</span
+                  ><i class="fa-solid fa-star ms-4"></i> (100)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
+            style="width: 17rem"
+          >
+            <img
+              src="./images/list-3.jpg.webp"
+              class="card-img-top"
+              alt=""
+              style="width: 100%; margin-top: 10px"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-burger"></i>
+            </div>
+            <div class="card-body text-center">
+              <p>Shopping</p>
+              <h5 class="card-title">Bhatbhateni</h5>
+              <p style="color: #686666">
+                <i
+                  class="fa-solid fa-location-dot me-2"
+                  style="color: #ff414d"
+                ></i
+                >Traffic Chowk-3, Birat
+              </p>
+              <p style="color: #686666">
+                <i class="fa-solid fa-phone me-2" style="color: #ff414d"></i
+                >+977-9812345676
+              </p>
+              <hr />
+              <div class="review">
+                <p style="color: #686666">
+                  Review: <span style="color: #000">5.0/5</span
+                  ><i class="fa-solid fa-star ms-4"></i> (100)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
+            style="width: 17rem"
+          >
+            <img
+              src="./images/list-2.jpg.webp"
+              class="card-img-top"
+              alt=""
+              style="width: 100%; margin-top: 10px"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-burger"></i>
+            </div>
+            <div class="card-body text-center">
+              <p>Hotel</p>
+              <h5 class="card-title">National Hotel</h5>
+              <p style="color: #686666">
+                <i
+                  class="fa-solid fa-location-dot me-2"
+                  style="color: #ff414d"
+                ></i
+                >Traffic Chowk-3, Birat
+              </p>
+              <p style="color: #686666">
+                <i class="fa-solid fa-phone me-2" style="color: #ff414d"></i
+                >+977-9812345676
+              </p>
+              <hr />
+              <div class="review">
+                <p style="color: #686666">
+                  Review: <span style="color: #000">5.0/5</span
+                  ><i class="fa-solid fa-star ms-4"></i> (100)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
+            style="width: 17rem"
+          >
+            <img
+              src="./images/darius-E-_I18oX5NQ-unsplash.jpg"
+              class="card-img-top"
+              alt=""
+              style="width: 100%; margin-top: 10px"
+            />
+            <div class="icon">
+              <i class="fa-solid fa-burger"></i>
+            </div>
+            <div class="card-body text-center">
+              <p>Entertainment</p>
+              <h5 class="card-title">American Circus</h5>
+              <p style="color: #686666">
+                <i
+                  class="fa-solid fa-location-dot me-2"
+                  style="color: #ff414d"
+                ></i
+                >Traffic Chowk-3, Birat
+              </p>
+              <p style="color: #686666">
+                <i class="fa-solid fa-phone me-2" style="color: #ff414d"></i
+                >+977-9812345676
+              </p>
+              <hr />
+              <div class="review">
+                <p style="color: #686666">
+                  Review: <span style="color: #000">5.0/5</span
+                  ><i class="fa-solid fa-star ms-4"></i> (100)
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="col-lg-3 col-md-6 col-sm-12" >
-        <div class="card mx-auto" style="width: 100%; position: relative" id="card2">
-          <img
-            src="./images/kate-branch-SLNksSRdLak-unsplash.jpg"
-            class="card-img-top"
-            alt="Listing Image"
-          />
-          <div class="eclipse"></div>
-          <i class="fa-solid fa-burger fa-2x logo"></i>
-          <div class="card-body text-center">
-            <h5 class="card-title">Hotels</h5>
-            <h2 class="card-text"><a href="listingDetails.html">Nepalese Hotel</a></h2>
-            <p class="card-text">
-              <i class="fas fa-map-marker-alt"></i> Traffic Chowk-3, Birat
-            </p>
-            <p class="card-text"><i class="fas fa-phone"></i> 9867647546</p>
-            <div class="underline"></div>
-            <p class="card-text">Review: <span>★★★★☆</span>(120)</p>
-          </div>
-        </div>
-      </div>
+    <!-- pagination -->
+    <nav aria-label="Page navigation example" class=" page mt-4 mb-5 pb-5">
+      <ul class="pagination justify-content-center mx-4">
+        <li class="page-item mx-2"><a class="page-link" href="#"><i class="fa-solid fa-less-than"></i></a></li>
+        <li class="page-item mx-2"><a class="page-link" href="#">1</a></li>
+        <li class="page-item mx-2"><a class="page-link" href="#">2</a></li>
+        <li class="page-item mx-2"><a class="page-link" href="#">3</a></li>
+        <li class="page-item mx-2"><a class="page-link" href="#"><i class="fa-solid fa-greater-than"></i></a></li>
+      </ul>
+    </nav>
 
-      <div class="col-lg-3 col-md-6 col-sm-12" >
-        <div class="card mx-auto" style="width: 100%; position: relative" id="card3">
-          <img
-            src="./images/matt-ragland-02z1I7gv4ao-unsplash.jpg"
-            class="card-img-top"
-            alt="Listing Image"
-          />
-          <div class="eclipse"></div>
-          <i class="fa-solid fa-burger fa-2x logo"></i>
-          <div class="card-body text-center">
-            <h5 class="card-title">Education</h5>
-            <h2 class="card-text"><a href="listingDetails.html">Purbanchal College</a></h2>
-            <p class="card-text">
-              <i class="fas fa-map-marker-alt"></i> Traffic Chowk-3, Birat
+     <!-- footer -->
+     <footer class="mt-5 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="first mb-4 col-lg-3 col-md-12 col-sm-12">
+            <h4 class="mt-4 mb-5">
+              Directory
+              <span style="color: #ff414d">Hub</span>
+            </h4>
+            <p class="">
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
             </p>
-            <p class="card-text"><i class="fas fa-phone"></i> 9867647546</p>
-            <div class="underline"></div>
-            <p class="card-text">Review: <span>★★★★☆</span>(120)</p>
+            <div class="icon">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
           </div>
-        </div>
-      </div>
+          <div class="second mb-4 col-lg-3 col-md-12 col-sm-12">
+            <h5 class="mb-4">Quick Links</h5>
+            <ul class="">
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">About</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">Listing</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i>
+                <a href="">Contact</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">Terms & Condition</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">privacy</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href=""> Feedback</a>
+              </li>
+            </ul>
+          </div>
+          <div class="third mb-4 col-lg-3 col-md-12 col-sm-12">
+            <h5 class="mb-4">Categories</h5>
+            <ul>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">Food & Drinks</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href=""> Hotel</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">Shopping</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href=""> Beauty & Salon</a>
+              </li>
 
-      <div class="col-lg-3 col-md-6 col-sm-12" >
-        <div class="card mx-auto" style="width: 100%; position: relative" id="card4">
-          <img
-            src="./images/aleksandr-popov-9vDdkxSCAD4-unsplash.jpg"
-            class="card-img-top"
-            alt="Listing Image"
-          />
-          <div class="eclipse"></div>
-          <i class="fa-solid fa-burger fa-2x logo"></i>
-          <div class="card-body text-center">
-            <h5 class="card-title">Bar & Club</h5>
-            <h2 class="card-text"><a href="listingDetails.html">Cat Walk</a></h2>
-            <p class="card-text">
-              <i class="fas fa-map-marker-alt"></i> Traffic Chowk-3, Birat
-            </p>
-            <p class="card-text"><i class="fas fa-phone"></i> 9867647546</p>
-            <div class="underline"></div>
-            <p class="card-text">Review: <span>★★★★☆</span>(120)</p>
-          </div>
-        </div>
-      </div>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">Fitness & Gym</a>
+              </li>
 
-      <div class="col-lg-3 col-md-6 col-sm-12" >
-        <div class="card mx-auto" style="width: 100%; position: relative" id="card5">
-          <img
-            src="./images/cathy-pham-3jAN9InapQI-unsplash.jpg"
-            class="card-img-top"
-            alt="Listing Image"
-          />
-          <div class="eclipse"></div>
-          <i class="fa-solid fa-burger fa-2x logo"></i>
-          <div class="card-body text-center">
-            <h5 class="card-title">Fitness & Gym</h5>
-            <h2 class="card-text"><a href="listingDetails.html">Fitgym Body</a></h2>
-            <p class="card-text">
-              <i class="fas fa-map-marker-alt"></i> Traffic Chowk-3, Birat
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i>
+                <a href="">Bar & Club</a>
+              </li>
+            </ul>
+          </div>
+          <div class="fourth col-lg-3 col-md-12 col-sm-12">
+            <h5 class="mb-4">Have a Question?</h5>
+            <p><i class="fa-solid fa-map me-2"></i> Traffic Chowk-3,, birat</p>
+            <p>
+              <i class="fa fa-phone me-2" aria-hidden="true"></i>
+              +977-9833234323
             </p>
-            <p class="card-text"><i class="fas fa-phone"></i> 9867647546</p>
-            <div class="underline"></div>
-            <p class="card-text">Review: <span>★★★★☆</span>(120)</p>
+            <p><i class="fa-solid fa-paper-plane me-2"></i> info@12gmail.com</p>
           </div>
         </div>
       </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-12" >
-        <div class="card mx-auto" style="width: 100%; position: relative" id="card6">
-          <img
-            src="./images/sung-jin-cho-BbVGAjfAQ4o-unsplash.jpg"
-            class="card-img-top"
-            alt="Listing Image"
-          />
-          <div class="eclipse"></div>
-          <i class="fa-solid fa-burger fa-2x logo"></i>
-          <div class="card-body text-center">
-            <h5 class="card-title">Shopping</h5>
-            <h2 class="card-text"><a href="listingDetails.html">Bhatbhateni</a></h2>
-            <p class="card-text">
-              <i class="fas fa-map-marker-alt"></i> Traffic Chowk-3, Birat
-            </p>
-            <p class="card-text"><i class="fas fa-phone"></i> 9867647546</p>
-            <div class="underline"></div>
-            <p class="card-text">Review: <span>★★★★☆</span>(120)</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-12" >
-        <div class="card mx-auto" style="width: 100%; position: relative" id="card6">
-          <img
-            src="./images/zoshua-colah-VStqaE46VGA-unsplash.jpg"
-            class="card-img-top"
-            alt="Listing Image"
-          />
-          <div class="eclipse"></div>
-          <i class="fa-solid fa-burger fa-2x logo"></i>
-          <div class="card-body text-center">
-            <h5 class="card-title">Banks</h5>
-            <h2 class="card-text"><a href="listingDetails.html">Nabil Bank</a></h2>
-            <p class="card-text">
-              <i class="fas fa-map-marker-alt"></i> Traffic Chowk-3, Birat
-            </p>
-            <p class="card-text"><i class="fas fa-phone"></i> 9867647546</p>
-            <div class="underline"></div>
-            <p class="card-text">Review: <span>★★★★☆</span>(120)</p>
-          </div>
-        </div>
-      </div>
-     
-      <div class="col-lg-3 col-md-6 col-sm-12" >
-        <div class="card mx-auto" style="width: 100%; position: relative" id="card6">
-          <img
-            src="./images/darius-E-_I18oX5NQ-unsplash.jpg"
-            alt="Listing Image"
-          />
-          <div class="eclipse"></div>
-          <i class="fa-solid fa-burger fa-2x logo"></i>
-          <div class="card-body text-center">
-            <h5 class="card-title">Entertainments</h5>
-            <h2 class="card-text"><a href="listingDetails.html">Nepali Circus</a></h2>
-            <p class="card-text">
-              <i class="fas fa-map-marker-alt"></i> Traffic Chowk-3, Birat
-            </p>
-            <p class="card-text"><i class="fas fa-phone"></i> 9867647546</p>
-            <div class="underline"></div>
-            <p class="card-text">Review: <span>★★★★☆</span>(120)</p>
-          </div>
-        </div>
-      </div>
+    </footer>
+    <div class="copyright p-3" style="background-color: #0c1016">
+      <p class="text-center mt-4 fs-6" style="color: #9e9e9e">
+        DirectoryHub &copy; 2024, all right reserved
+      </p>
     </div>
-  </section>
 
-  <section class="pagination justify-content-center mt-3">
-  <nav aria-label="Page navigation example mt-5">
-    <ul class="pagination ">
-      <li class="page-item disabled">
-        <a class="page-link">Previous</a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#">Next</a>
-      </li>
-    </ul>
-  </nav>
-</section>
-
-  <footer class="mt-5 py-5">
-    <div class="row container mx-auto">
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <h2>DirectoryHub</h2>
-        <p class="pt-4">
-          A small river named Duden flows by their place and supplies it with the necessary regelialia.
-        </p>
-        <div class="icon mb-3">
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-facebook ms-3" aria-hidden="true"></i>
-        <i class="fa fa-youtube ms-3" aria-hidden="true"></i>
-      </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <h4 class="mb-4">Quick Links</h4>
-        <ul class="">
-          <li><a href="#" ><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>About Us</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Listing</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Contact Us</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Terms & Condition</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Privacy</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Feedback</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <h4 class="mb-4">Categories</h4>
-        <ul class="">
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Food & Drinks</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Hotels</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Shopping</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Beauty & Salon</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Fitness & Gym</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Bar & Club</a></li>
-        </ul>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <h4 class="mb-4">Have a question?</h4>
-        <p><i class="fa-solid fa-map me-2"></i> Traffic chowk-3, Biratnagar</p>
-        <p><i class="fa-solid fa-phone me-2"></i> +977-9834344456</p>
-        <p><i class="fa-solid fa-paper-plane me-2"></i> info@12gmail.com</p>
-        </div>
-      </div>
-
-    </div>
-    
-  </footer>
-  <div class="copyright text-center">
-    <p>E-commerce &copy; 2024,all right reserved.</p>
-  </div>
-
- <!-- Bootstrap JS and dependencies (optional for icons) -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
-
- <script src="js/script.js"></script>
-</body>
+    <!--bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

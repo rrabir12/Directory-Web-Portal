@@ -1,181 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DirectoryHub | Listing Details</title>
-   <!-- external css -->
-   <link rel="stylesheet" href="css/style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DirectoryHub | Detail</title>
 
-   <!-- bootstrap css link -->
-   <link
-     rel="stylesheet"
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-   />
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
 
-   <!-- font awesome link-->
-   <script
-     src="https://kit.fontawesome.com/a6b4e92e5b.js"
-     crossorigin="anonymous"
-   ></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-   <!-- iconify -->
-   <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
- 
-</head>
-<body>
-  
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"
-        ><i class="fa-solid fa-database me-1"></i>DirectoryHub</a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="listing.html">Listing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div class="text-end">
-        <button type="button" class="btn">
-          <a href="addListing.html"><i class="fa-solid fa-plus me-1"></i>Add Listing</a>
+    <!-- font awesome icon link -->
+    <script
+      src="https://kit.fontawesome.com/a6b4e92e5b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style></style>
+  </head>
+  <body style="background-color: #f0f4f7">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand mt-1" href="#"
+          ><h4>
+            <i class="fa-solid fa-database me-2"></i>Directory
+            <span style="color: #ff414d">Hub</span>
+          </h4></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="background-color: #ff414d"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-    </div>
-  </nav>
-
-  <section class="about-hero ">
-    <div class="container">
-      <h6>
-        Home > Category > Listing
-      </h6>
-      <h1>Listing Details</h1>
-    </div>
-  </section>
-
-  <section class="ListingDetails container mt-5" style="background-color: #FBFDF8;">
-    <div class="row">
-      <div class="logo col-lg-6 col-md-6 col-sm-12">
-        <img src="./images/british-library-gTV2osuOsJc-unsplash.jpg" class="img-fluid" alt="">
-      </div>
-      <div class="details col-lg-6 col-md-6 col-sm-12">
-        <hr>
-        <span>Province: </span><span> Koshi</span>
-        <hr>
-        <span>Our Address: </span><span> 	Lalchan Plaza. Chipledhung, Pokhara</span>
-        <hr>
-        <span>Telephone No: </span><span>9851121820, 061-586887</span>
-        <hr>
-        <span>Email: </span><span>info@12gmail.com</span>
-        <hr>
-        <span>Web Link: </span><span><a href="https://wowfashionschool.com.np/" target="_blank">https://wowfashionschool.com.np/</a></span>
-        <hr>
-        <span>Social Link: 
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-          <i class="fa fa-facebook ms-3" aria-hidden="true"></i>
-          <i class="fa fa-youtube ms-3" aria-hidden="true"></i>
-        </span>
-      </div>
-    </div>
-    <h4 class="text-center fs-5 p-2" style="background-color: #ff414d; border-radius: 10px;">More About Company</h4>
-    <div class="row">
-      <div class="detail col-lg-6 col-md-6 col-sm-12">
-        <p>Welcome to the Wow Fashion School Pokhara. We are the best fashion designing institute in Pokhara. We provide a range of fashion designing courses in Pokhara. We are approved by both the CTEVT (Gov of Nepal) and ISO 9001:2015 (Globally Certified) and have been in business for over 20 years. In 2018/19 & 2022, we were awarded the best fashion school in Nepal. Our fashion school is led by international fashion designers from Cannes Film Festival, Tenzin Tseten Bhutia & Tara Gurung, in collaboration with professional mentors. Yet, education at Wow Fashion School goes beyond the classroom. With a firm belief in learning by doing, we are proud to offer 100% internship opportunities at our various branches and boutique. </p>
-      </div>
-      <div class="map col-lg-6 col-md-6 col-sm-12">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d228560.52203474796!2d87.28739699781511!3d26.479631583182865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spanchamukhi%20chowk!5e0!3m2!1sen!2snp!4v1725268884874!5m2!1sen!2snp"
-          class="w-100"
-          height="400"
-          style="border: 0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </div>
-  </section>
-  
-
-  <footer class="mt-5 py-5">
-    <div class="row container mx-auto">
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <h2>DirectoryHub</h2>
-        <p class="pt-4">
-          A small river named Duden flows by their place and supplies it with the necessary regelialia.
-        </p>
-        <div class="icon mb-3">
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-facebook ms-3" aria-hidden="true"></i>
-        <i class="fa fa-youtube ms-3" aria-hidden="true"></i>
-      </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <h4 class="mb-4">Quick Links</h4>
-        <ul class="">
-          <li><a href="#" ><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>About Us</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Listing</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Contact Us</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Terms & Condition</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Privacy</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Feedback</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <h4 class="mb-4">Categories</h4>
-        <ul class="">
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Food & Drinks</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Hotels</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Shopping</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Beauty & Salon</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Fitness & Gym</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right me-2" aria-hidden="true"></i>Bar & Club</a></li>
-        </ul>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <h4 class="mb-4">Have a question?</h4>
-        <p><i class="fa-solid fa-map me-2"></i> Traffic chowk-3, Biratnagar</p>
-        <p><i class="fa-solid fa-phone me-2"></i> +977-9834344456</p>
-        <p><i class="fa-solid fa-paper-plane me-2"></i> info@12gmail.com</p>
+        <div class="collapse navbar-collapse nav" id="navbarColor02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-3" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="listing.html">Listing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="button">
+            <button class="btn">
+              <a href="addListing.html"
+                ><i class="fa-solid fa-plus me-2"></i>Add Listing</a
+              >
+            </button>
+          </div>
         </div>
       </div>
+    </nav>
 
+    <!-- hero section -->
+    <section class="about-hero">
+      <div class="container">
+        <p>Home > Category > Listing</p>
+        <h1>Listing Detail</h1>
+      </div>
+    </section>
+
+    <section class="listing-detail mt-5 py-5 mb-5">
+      
+      <div class="container">
+        <h2 class="text-center fs-4 mb-4 p-2">Company details</h2>
+        <div class="row">
+          <div class="image col-lg-4">
+            <img class="img-fluid" src="./images/Apple-Logo-1.jpg" alt="" />
+          </div>
+          <div class="company-detail col-lg-8">
+            <hr />
+            <div class="province d-flex align-item-cente">
+              <h5 class="fs-6">Province:</h5>
+              <span style="margin-left: 60px;">Koshi</span>
+            </div>
+            <hr />
+            <div class="province d-flex align-item-cente">
+              <h5 class="fs-6">Our Address:</h5>
+              <span style="margin-left: 30px;">Panchamukhi-3, Biratnagar</span>
+            </div>
+            <hr />
+            <div class="province d-flex align-item-cente">
+              <h5 class="fs-6">Phone Number:</h5>
+              <span style="margin-left: 8px;">+977-9812345676, 061-586887</span>
+            </div>
+            <hr />
+            <div class="province d-flex align-item-cente">
+              <h5 class="fs-6">Email:</h5>
+              <span style="margin-left: 89px;">info@12gmail.com</span>
+            </div>
+            <hr />
+            <div class="province d-flex align-item-cente">
+              <h5 class="fs-6">Website Link:</h5>
+              <span style="margin-left: 34px;">https://google.com/</span>
+            </div>
+            <hr />
+            <div class="province d-flex align-item-cente g-3">
+              <h5 class="fs-6">Social Link:</h5>
+              <span style="margin-left: 51px;"
+                ><i class="fa-brands fa-facebook-f me-3"></i
+                ><i class="fa-brands fa-instagram me-3"></i
+                ><i class="fa-brands fa-x-twitter"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-center fs-4 mt-4 mb-4 p-2" >More About Company</h2>
+      <div class="row">
+        <div class="text col-lg-6">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ipsum libero harum necessitatibus? Facilis facere, quam hic animi libero laboriosam necessitatibus perspiciatis, molestias culpa error sunt deserunt nulla fugit incidunt.
+          Iste dolorem fugiat, impedit soluta quis facere iure omnis non perspiciatis iusto quas. Laborum, modi odio illo consectetur blanditiis quidem eius velit soluta ullam vel magnam itaque labore dignissimos hic.
+          
+        </div>
+        <div class="map col-lg-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114311.48436726406!2d87.18940443744911!3d26.448188820403512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef744704331cc5%3A0x6d9a85e45c54b3fc!2sBiratnagar%2056613!5e0!3m2!1sen!2snp!4v1726767099885!5m2!1sen!2snp" width="545" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="mt-5 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="first mb-4 col-lg-3 col-md-12 col-sm-12">
+            <h4 class="mt-4 mb-5">
+              Directory
+              <span style="color: #ff414d">Hub</span>
+            </h4>
+            <p class="">
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </p>
+            <div class="icon">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="second mb-4 col-lg-3 col-md-12 col-sm-12">
+            <h5 class="mb-4">Quick Links</h5>
+            <ul class="">
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">About</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">Listing</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i>
+                <a href="">Contact</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">Terms & Condition</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">privacy</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href=""> Feedback</a>
+              </li>
+            </ul>
+          </div>
+          <div class="third mb-4 col-lg-3 col-md-12 col-sm-12">
+            <h5 class="mb-4">Categories</h5>
+            <ul>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">Food & Drinks</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href=""> Hotel</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">Shopping</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href=""> Beauty & Salon</a>
+              </li>
+
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i
+                ><a href="">Fitness & Gym</a>
+              </li>
+
+              <li>
+                <i class="fa fa-angle-right me-1" aria-hidden="true"></i>
+                <a href="">Bar & Club</a>
+              </li>
+            </ul>
+          </div>
+          <div class="fourth col-lg-3 col-md-12 col-sm-12">
+            <h5 class="mb-4">Have a Question?</h5>
+            <p><i class="fa-solid fa-map me-2"></i> Traffic Chowk-3,, birat</p>
+            <p>
+              <i class="fa fa-phone me-2" aria-hidden="true"></i>
+              +977-9833234323
+            </p>
+            <p><i class="fa-solid fa-paper-plane me-2"></i> info@12gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright p-3" style="background-color: #0c1016">
+      <p class="text-center mt-4 fs-6" style="color: #9e9e9e">
+        DirectoryHub &copy; 2024, all right reserved
+      </p>
     </div>
-    
-  </footer>
-  <div class="copyright text-center">
-    <p>E-commerce &copy; 2024,all right reserved.</p>
-  </div>
 
- <!-- Bootstrap JS and dependencies (optional for icons) -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
-
- <script src="js/script.js"></script>
-</body>
+    <!--bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
