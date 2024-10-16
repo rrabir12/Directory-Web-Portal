@@ -13,22 +13,28 @@ font-family: 'poppins', sans-serif;
  .navbar{
   top: 0;
   left: 0;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  background-color: #F0F4F7;
-  position: sticky !important;
+  /* box-shadow: 0 5px 10px rgba(0,0,0,0.1); */
+  /* background-color: #F0F4F7 !important; */
+  background-color: transparent ;
+  position: fixed;
+  width: 100%;
   z-index: 1000 !important;
+  transition: .2s ease-in-out;
  }
+
+
  .container a h4{
-  color: #000;
+  color: #fff;
+  font-size: 30px;
  }
  .container a i{
   color: #ff414d;
  }
  .nav{
-  margin-left: 30%;
+  margin-left: 15%;
  }
  .nav ul li a{
-  color: #000;
+  color: #fff;
   position: relative;
   z-index: 1;
  }
@@ -68,6 +74,9 @@ color: #ff414d;
 }
  }
 @media only screen and (max-width: 990px) {
+  .navbar{
+    background-color: #989797;
+  }
   .nav{
     margin: 10px;
     display: flex;
@@ -107,7 +116,7 @@ color: #ff414d;
   left: 0;
   background-image: url('../images/bg_1.jpg.webp');
   width: 100%;
-  height: 110vh;
+  height: 115vh;
   background-repeat: no-repeat;
   background-position: top 20% center;
    background-attachment: fixed;
@@ -150,7 +159,7 @@ margin-left: 20px;
 
 /* category */
 .category {
-  margin-top: -40px;
+  margin-top: -10px;
   position: relative;
   padding-bottom: 40px;
   /* background-color: #F0F4F7; */
@@ -669,4 +678,16 @@ margin-left: 3px;
 
 .listing-detail .container h2{
   color: #fff; background-color: #ff414d; border-radius: 10px;
+}
+
+/* for fadeinup animation */
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Increased to 0.5s */
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -160,6 +160,7 @@
           <div
             class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
             style="width: 17rem"
+            id="cardp1"
           >
             <img
               src="./images/toa-heftiba-B1KuLO3NoRg-unsplash.jpg"
@@ -197,6 +198,7 @@
           <div
             class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
             style="width: 17rem"
+            id="cardp2"
           >
             <img
               src="./images/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg"
@@ -234,6 +236,7 @@
           <div
             class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
             style="width: 17rem"
+            id="cardp3"
           >
             <img
               src="./images/matt-ragland-02z1I7gv4ao-unsplash.jpg"
@@ -271,6 +274,7 @@
           <div
             class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
             style="width: 17rem"
+            id="cardp4"
           >
             <img
               src="./images/list-6.jpg.webp"
@@ -308,6 +312,7 @@
           <div
             class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
             style="width: 17rem"
+            id="cardp5"
           >
             <img
               src="./images/cathy-pham-3jAN9InapQI-unsplash.jpg"
@@ -345,6 +350,7 @@
           <div
             class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
             style="width: 17rem"
+            id="cardp6"
           >
             <img
               src="./images/freestocks-_3Q3tsJ01nc-unsplash.jpg"
@@ -382,6 +388,7 @@
           <div
             class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
             style="width: 17rem"
+            id="cardp7"
           >
             <img
               src="./images/piggybank-twz_GExsfmQ-unsplash.jpg"
@@ -419,6 +426,7 @@
           <div
             class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
             style="width: 17rem"
+            id="cardp8"
           >
             <img
               src="./images/list-7.jpg.webp"
@@ -456,6 +464,7 @@
           <div
             class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
             style="width: 17rem"
+            id="cardp9"
           >
             <img
               src="./images/list-1.jpg.webp"
@@ -493,6 +502,7 @@
           <div
             class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
             style="width: 17rem"
+            id="cardp10"
           >
             <img
               src="./images/list-3.jpg.webp"
@@ -530,6 +540,7 @@
           <div
             class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
             style="width: 17rem"
+            id="cardp11"
           >
             <img
               src="./images/list-2.jpg.webp"
@@ -567,6 +578,7 @@
           <div
             class="card col-lg-3 col-md-6 col-sm-12 mx-auto mb-3"
             style="width: 17rem"
+            id="cardp12"
           >
             <img
               src="./images/darius-E-_I18oX5NQ-unsplash.jpg"
@@ -712,6 +724,59 @@
       </p>
     </div>
 
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 90) {
+      navbar.style.backgroundColor = '#151c26'; // Change to desired color
+    } else {
+      navbar.style.backgroundColor = 'transparent';
+    }
+  });
+});
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const options = {
+          threshold: 0.2
+        };
+  
+        const cardps = [
+          document.getElementById('cardp1'),
+          document.getElementById('cardp2'),
+          document.getElementById('cardp3'),
+          document.getElementById('cardp4'),
+          document.getElementById('cardp5'),
+          document.getElementById('cardp6'),
+          document.getElementById('cardp7'),
+          document.getElementById('cardp8'),
+          document.getElementById('cardp9'),
+          document.getElementById('cardp10'),
+          document.getElementById('cardp11'),
+          document.getElementById('cardp12')
+        ];
+  
+        let delay = 0;
+  
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                entry.target.classList.add('visible');
+              }, delay);
+              delay += 200;
+              observer.unobserve(entry.target);
+            }
+          });
+        }, options);
+  
+        cardps.forEach(card => {
+          observer.observe(card);
+        });
+      });
+    </script>
+    
     <!--bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
